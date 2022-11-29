@@ -399,18 +399,27 @@
         </div>
 
         <div class="footer-input">
-            <span class="footer-span">Підпишіться на розсилку</span>
-            <input class="footer-input-email" type="text" placeholder="E-mail">
-            <div class="footer-btn-subscribe">
-            <button class="footer-button" type="submit">Підписатися</button>
-            </div>
+            <p class="footer-p">Підпишіться на розсилку</p>
+                <form>
+                    <div class="div-form">
+                        <input class="footer-input-email" 
+                        type="text" 
+                        placeholder="E-mail"
+                        required>
+                        <button class="footer-button" type="submit">Підписатися
+                            <svg class="footer-button-icon" width="24" height="24">
+                                <use href="./images/telegram.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                </form>
+                    </div>
         </div>
     </footer>
     
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
-                <svg class="modal-icon" width="11" height="11">
+                <svg class="modal-icon-close" width="11" height="11">
                     <use href="./images/cross-icon.svg#icon-Vector-2"></use>
                 </svg>
             </button>
@@ -418,39 +427,43 @@
             <form class="modal-form">
                     <label class="modal-label">
                         Ім'я
-                <input type="text" name="user-name" class="modal-input">
-                    <svg class="modal-icon" width="13" height="13">
+                <input type="text" name="user-name" class="modal-input" required>
+                    <svg class="modal-icon" width="18" height="18">
                         <use href="./images/symbols-modal.svg#icon-Profile"></use>
                     </svg>
                     </label>
                     
                     <label class="modal-label">
                         Телефон
-                <input type="tel" name="user-tel" class="modal-input">
-                    <svg class="modal-icon" width="13" height="13">
+                <input type="tel" name="user-tel" class="modal-input" required>
+                    <svg class="modal-icon" width="18" height="18">
                         <use href="./images/symbols-modal.svg#icon-Tel"></use>
                     </svg>
                     </label>
                     
                     <label class="modal-label">
                         Пошта
-                <input type="email" name="user-email" class="modal-input">
-                    <svg class="modal-icon" width="13" height="13">
+                <input type="email" name="user-email" class="modal-input" required>
+                    <svg class="modal-icon" width="18" height="18">
                         <use href="./images/symbols-modal.svg#icon-Email"></use>
                     </svg>
                     </label>
-                    
+
+                    <div class="comment-div">
                     <label class="modal-label">
                         Коментар
                         <textarea class="modal-commment" name="comment" rows="8" placeholder="Введіть текст"></textarea>
                     </label>
+                    </div>
 
+                    <div class="checkbox-div">
                     <label class="checkbox-field">
                         <input class="checkbox" type="checkbox" name="agreement">
                             <span class="checkbox-icon"></span>
                             <span class="checkbox-label">Погоджуюсь з розсилкою та приймаю</span>
                             <a class="checkbox-link" href="#">Умови договору</a>
                         </label>
+                    </div>
                 
                     <button class="modal-button" type="submit">Відправити</button>
             </form>
