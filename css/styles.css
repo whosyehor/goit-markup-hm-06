@@ -839,6 +839,12 @@ p {
     flex-direction: column;
     margin-bottom: 10px;
 }
+.form-field-comment{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 .modal-title{
     font-size: 20px;
     font-weight: 700;
@@ -921,6 +927,23 @@ p {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+.checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.policy-checkbox:checked+.policy-icon{
+    background-color: #2196F3;
+    border-color: transparent;
+}
+.checkbox:focus+.checkbox-icon{
+    box-shadow: #2196F3;
+}
+.policy-checkbox{
+    border-radius: 2px;
+    color: #2196F3;
 }
 .policy-icon{
     fill: #FFFFFF;
